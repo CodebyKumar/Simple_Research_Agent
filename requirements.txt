@@ -1,0 +1,29 @@
+# Core CrewAI framework
+crewai
+crewai-tools
+
+# Google Gemini AI
+google-genai
+
+# Environment and configuration
+python-dotenv
+
+# HTTP requests
+requests
+
+# Optional: For enhanced functionality
+pydantic
+langchain
+langchain-community
+
+# Development and testing (optional)
+pytest
+black
+flake8
+python-dotenv
+requests
+google-genai
+markdown
+langchain
+langchain-community
+openai
