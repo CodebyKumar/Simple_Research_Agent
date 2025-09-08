@@ -27,3 +27,4 @@ markdown
 langchain
 langchain-community
 openai
+streamlit

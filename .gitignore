@@ -1,2 +1,11 @@
-reports
+__pycache__/
+*.pyc
 .env
+.venv/
+venv/
+.reports/
+.reports
+reports/
+.streamlit/secrets.toml
+*.db
+.DS_Store
