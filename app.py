@@ -3,7 +3,7 @@ from utils.agent import ResearchAgent
 import os
 import shutil
 
-st.title("Research Agent (Gemini)")
+st.title("Research Agent (Gemini + Serper)")
 
 with st.expander("Get API Keys"):
     st.markdown("- [Get a Serper API Key](https://serper.dev/) (for Google Search)")
