@@ -4,9 +4,10 @@
 headless = true
 enableCORS = false
 
+
 [theme]
 primaryColor = "#4F8BF9"
-backgroundColor = "#F0F2F6"
-secondaryBackgroundColor = "#FFFFFF"
-textColor = "#262730"
+backgroundColor = "#000000ff"
+secondaryBackgroundColor = "#161616ff"
+textColor = "#ffffffff"
 font = "sans serif"
