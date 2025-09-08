@@ -28,4 +28,4 @@ langchain
 langchain-community
 openai
 streamlit
-sqlite3
+pysqlite3
