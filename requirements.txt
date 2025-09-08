@@ -1,5 +1,5 @@
 # Google Gemini AI
-google-generativeai
+google-genai
 
 # Environment and configuration
 python-dotenv
@@ -7,8 +7,6 @@ python-dotenv
 # HTTP requests
 requests
 
-# Database driver for chromadb compatibility on Streamlit Cloud
-pysqlite3-binary
 
 # Optional: For enhanced functionality
 pydantic
