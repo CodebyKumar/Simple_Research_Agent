@@ -7,14 +7,19 @@ from datetime import datetime
 from crewai import Agent as CrewAgent, Task as CrewTask, Crew
 
 class ResearchAgent:
-    def __init__(self):
-        load_dotenv()
-        self.serper_api_key = os.getenv('SERPER_API_KEY')
-        self.google_api_key = os.getenv('GOOGLE_API_KEY')
+    def __init__(self, serper_api_key=None, google_api_key=None):
+        # If keys are provided (e.g., from Streamlit), use them; else load from .env
+        if serper_api_key and google_api_key:
+            self.serper_api_key = serper_api_key
+            self.google_api_key = google_api_key
+        else:
+            load_dotenv()
+            self.serper_api_key = os.getenv('SERPER_API_KEY')
+            self.google_api_key = os.getenv('GOOGLE_API_KEY')
         if not self.serper_api_key:
-            raise ValueError("SERPER_API_KEY not found in environment variables")
+            raise ValueError("SERPER_API_KEY not found in environment variables or input")
         if not self.google_api_key:
-            raise ValueError("GOOGLE_API_KEY not found in environment variables")
+            raise ValueError("GOOGLE_API_KEY not found in environment variables or input")
         self.search_api = SerperAPI(self.serper_api_key)
         self.gemini_agent = GeminiAgent(self.google_api_key)
 
