@@ -1,9 +1,5 @@
-# Core CrewAI framework
-crewai
-crewai-tools
-
 # Google Gemini AI
-google-genai
+google-generativeai
 
 # Environment and configuration
 python-dotenv
@@ -11,20 +7,19 @@ python-dotenv
 # HTTP requests
 requests
 
+# Database driver for chromadb compatibility on Streamlit Cloud
+pysqlite3-binary
+
 # Optional: For enhanced functionality
 pydantic
 langchain
 langchain-community
+langchain-google-genai
 
 # Development and testing (optional)
 pytest
 black
 flake8
-python-dotenv
-requests
-google-genai
 markdown
-langchain
-langchain-community
 openai
 streamlit
